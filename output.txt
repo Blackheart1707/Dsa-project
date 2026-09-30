@@ -1,0 +1,21 @@
+=== BST Insertion Trace ===
+Step 1 | insert 45 | tree empty -> root
+Step 2 | insert 20 | 20<45 -> left child of 45
+Step 3 | insert 60 | 60>45 -> right child of 45
+Step 4 | insert 10 | 10<45 10<20 -> left child of 20
+Step 5 | insert 30 | 30<45 30>20 -> right child of 20
+Step 6 | insert 50 | 50>45 50<60 -> left child of 60
+Step 7 | insert 70 | 70>45 70>60 -> right child of 60
+Step 8 | insert 25 | 25<45 25>20 25<30 -> left child of 30
+Step 9 | insert 55 | 55>45 55<60 55>50 -> right child of 50
+
+BST height: 3
+Inorder:   10 20 25 30 45 50 55 60 70 
+Preorder:  45 20 10 30 25 60 50 55 70 
+Postorder: 10 25 30 20 55 50 70 60 45 
+
+=== Search Comparison ===
+Key      Status     BST comparisons  Linear comparisons
+25       Found      4                8               
+55       Found      4                9               
+90       Not Found  3                9               
